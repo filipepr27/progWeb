@@ -1,0 +1,314 @@
+@font-face {
+    font-family: Bakbak One;
+    src: url(../fontes/BakbakOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Squada One;
+    src: url(../fontes/SquadaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Med;
+    src: url(../fontes/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto Lit;
+    src: url(../fontes/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: Roboto Reg;
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto Blck;
+    src: url(../fontes/Roboto-Black.ttf);
+}
+
+body{
+    margin: 0px;
+    min-width: 330px;
+}
+
+p{
+    font-family: 'Roboto Lit', Arial, Helvetica, sans-serif;
+}
+
+header p{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 0px;
+    text-align: right;
+    color: white;
+    
+}
+
+h2, h3{
+    font-family: 'Roboto Blck', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
+}
+
+
+/* MENU  */
+#top{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+#top img{
+    height: 130px;
+    padding-left: 7%;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+#top ul{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#top li{
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+#top a{
+    font-family: 'Roboto Med', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+
+}
+
+#top li:hover{
+    color: white;
+    transition: 0.6s;
+    background-color: #041f3d;
+}
+
+#top a:hover{
+    color: white;
+}
+
+#burger{
+    display: none;
+}
+
+.capa{
+    background-image: url(../imagens/10.png);
+    height: 400px;
+    width: 100%;
+    object-fit:cover;
+    background-position: bottom left;
+    margin-bottom: 30px;
+}
+
+.news{
+    background-image: url(../imagens/5.png);
+
+}
+
+.produtos{
+    position: relative;
+    box-shadow: 2px 7px 10px gray;
+    border-radius: 20px;
+    height: 400px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
+.produtos img{
+    max-width: 250px;
+    padding-top: 30px;
+}
+
+.produtos:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.produtos p{
+    font-family: 'Roboto Reg', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.noticias img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.noticias p, h2{
+    margin: 0px 10px;
+}
+
+.expo{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.expo h2{
+    padding-left: 10%;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+hr{
+    width: 70%;
+    margin-bottom: 60px;
+}
+
+footer{
+    text-align: center;
+    background-color: blueviolet;
+    margin: 50px 0px 0px 0px;
+    position: absolute;
+    width: 100%;
+    line-height: 10px;
+    min-width: 330px;
+}
+
+footer h3{
+    padding-bottom: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+footer a{
+    display: inline-block;
+    padding: 7px 0px;
+    font-family: 'Roboto Reg', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 14px;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+span{
+    color: antiquewhite;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .capa{
+        background-position: bottom center;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    #top ul{
+        display: none;
+    }
+
+    #burger{
+        display: inline-block;
+        color: black;
+        font-size: 60px;
+        padding-right: 7%;
+    }
+
+    #top {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .capa{
+        display: none;
+    }
+    header{
+        box-shadow: 2px 0px 10px gray;
+
+    }
+
+    #top{
+        flex-wrap: wrap;
+    }
+}
+
+/* INSTITUCIONAL  */
+
+.tec{
+    width: 400px;
+}
+
+.tec h3{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.tec li{
+    font-family: 'Roboto Reg', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    line-height: 35px;
+}
+
+.tec:hover{
+    transition: 0.7s;
+    
+}
+
+.tec:hover h3{
+    text-shadow: 1px 1px 1px gray;
+    transition: 2s;
+}
+
+.vant:hover{
+    box-shadow: 1px 4px 4px green;
+    
+}
+
+.vant:hover h3{
+    color: green;
+}
+
+.desv:hover{
+    box-shadow: 1px 4px 4px red;
+}
+
+.desv:hover h3{
+    color: red;
+}
+
+
+
+
+
